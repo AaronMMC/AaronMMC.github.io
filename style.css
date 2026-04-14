@@ -35,7 +35,7 @@
   }
 }
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+
 body {
   font-family: 'DM Sans', sans-serif;
   background: var(--bg);
@@ -103,9 +103,11 @@ nav {
   align-items: center;
   position: relative; overflow: hidden;
 }
+/* This is the magic rule that fixes your layout bug */
 #hero.visible {
   display: flex;
 }
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr 340px;
