@@ -100,8 +100,11 @@ nav {
 
 /* HERO */
 #hero {
-  display: flex; align-items: center;
+  align-items: center;
   position: relative; overflow: hidden;
+}
+#hero.visible {
+  display: flex;
 }
 .hero-grid {
   display: grid;
